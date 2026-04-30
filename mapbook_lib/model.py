@@ -5,4 +5,3 @@ users: list = [
     {"username": "filip", "location": "dęblin", "posts": "4",
      "usermessage": ["kocham legie3", "sprzedam opla3", "kiwi3"]},
 ]
-print(users)
