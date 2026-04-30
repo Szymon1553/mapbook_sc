@@ -1,11 +1,12 @@
 from mapbook_lib.model import users
-from mapbook_lib.controller import read_data, add_user, delete_user
+from mapbook_lib.controller import read_data, add_user, delete_user, update_user
 
 while True:
     print("0 - zakończ program")
     print("1 - wyświetl znajomych")
     print("2 - dodaj użytkownika")
     print("3 - usuń użytkownika")
+    print("4 - zmodyfikuj dane użytkownika")
     choose = input("wybierz opcje: ")
     if choose == "0":
         break
@@ -15,3 +16,5 @@ while True:
         add_user(users)
     if choose == "3":
         delete_user(users)
+    if choose == "4":
+        update_user(users)
