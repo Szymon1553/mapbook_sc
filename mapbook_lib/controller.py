@@ -5,7 +5,8 @@ import folium
 def read_data(users_data: list) -> None:
     for user in users_data:
         print(
-            f"Twój znajomy {user['username']} z miejscowości {user['location']} opublikował {user['posts']} wiadomości. Ostatnia wiadomość: {user['usermessage'][-1]}")
+            f"Twój znajomy {user['username']} z miejscowości {user['location']} opublikował "
+            f"{user['posts']} wiadomości. Ostatnia wiadomość: {user['usermessage'][-1]}")
 
 
 def add_user(users_data: list) -> None:
